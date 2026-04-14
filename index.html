@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Privacy Policy — Perfect ERP Mobile</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:   #438bbd;
+      --dark:      #0d1b2a;
+      --text:      #1a2e3f;
+      --muted:     #5a7184;
+      --border:    #dde6ed;
+      --bg:        #f5f8fa;
+      --card:      #ffffff;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+                   'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.75;
+    }
+
+    /* ── Header ── */
+    header {
+      background: var(--dark);
+      color: #fff;
+      padding: 52px 24px 40px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    header::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% 120%,
+                  rgba(67,139,189,.35) 0%, transparent 70%);
+    }
+    header .badge {
+      display: inline-block;
+      background: rgba(67,139,189,.25);
+      border: 1px solid rgba(67,139,189,.5);
+      color: #7dc6ef;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+      padding: 5px 14px;
+      border-radius: 20px;
+      margin-bottom: 18px;
+    }
+    header h1 {
+      font-size: clamp(22px, 4vw, 32px);
+      font-weight: 700;
+      letter-spacing: -.5px;
+      position: relative;
+    }
+    header h1 span { color: var(--primary); }
+    header p.sub {
+      margin-top: 10px;
+      color: rgba(255,255,255,.5);
+      font-size: 13px;
+      position: relative;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: 780px;
+      margin: 0 auto;
+      padding: 40px 20px 80px;
+    }
+
+    /* ── Lang switcher ── */
+    .lang-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 32px;
+    }
+    .lang-bar button {
+      padding: 7px 18px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: var(--card);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all .18s;
+    }
+    .lang-bar button.active {
+      background: var(--primary);
+      border-color: var(--primary);
+      color: #fff;
+    }
+
+    /* ── Section card ── */
+    .section {
+      background: var(--card);
+      border-radius: 14px;
+      border: 1px solid var(--border);
+      padding: 28px 30px;
+      margin-bottom: 16px;
+    }
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .section-icon {
+      width: 38px; height: 38px;
+      border-radius: 10px;
+      background: rgba(67,139,189,.10);
+      display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0;
+    }
+    .section-icon svg { width: 18px; height: 18px; stroke: var(--primary); }
+    .section h2 {
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--text);
+    }
+
+    p { margin-bottom: 10px; color: var(--text); }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      padding-left: 0;
+      list-style: none;
+      margin: 8px 0;
+    }
+    ul li {
+      padding: 5px 0 5px 22px;
+      position: relative;
+      color: var(--text);
+    }
+    ul li::before {
+      content: '';
+      position: absolute;
+      left: 0; top: 14px;
+      width: 6px; height: 6px;
+      border-radius: 50%;
+      background: var(--primary);
+    }
+
+    .highlight {
+      background: rgba(67,139,189,.07);
+      border-left: 3px solid var(--primary);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin: 12px 0;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    a { color: var(--primary); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .effective-date {
+      text-align: center;
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 24px;
+    }
+
+    /* ── Footer ── */
+    footer {
+      background: var(--dark);
+      color: rgba(255,255,255,.4);
+      text-align: center;
+      font-size: 12px;
+      padding: 24px;
+    }
+    footer a { color: rgba(255,255,255,.6); }
+
+    /* ── Hidden lang blocks ── */
+    .lang-block { display: none; }
+    .lang-block.visible { display: block; }
+
+    @media (max-width: 520px) {
+      .section { padding: 20px 18px; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="badge">Legal Document</div>
+  <h1>Privacy Policy<br><span>Perfect ERP Mobile</span></h1>
+  <p class="sub">Last updated: April 14, 2026 &nbsp;·&nbsp; Effective immediately</p>
+</header>
+
+<div class="container">
+
+  <!-- Lang switcher -->
+  <div class="lang-bar">
+    <button class="active" onclick="switchLang('tr', this)">🇹🇷 Türkçe</button>
+    <button onclick="switchLang('en', this)">🇬🇧 English</button>
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════════ TÜRKÇE -->
+  <div id="lang-tr" class="lang-block visible">
+
+    <p class="effective-date">Son güncelleme: 14 Nisan 2026</p>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h2>Genel Bilgi</h2>
+      </div>
+      <p>
+        Perfect ERP Mobile, üretim işletmelerine özel bir kurumsal kaynak yönetimi (ERP)
+        mobil raporlama uygulamasıdır. Uygulama yalnızca kurumsal (B2B) kullanıcılara
+        lisanslanmakta olup genel kamuya yönelik değildir.
+      </p>
+      <p>
+        Bu gizlilik politikası; uygulamanın hangi verileri topladığını, bu verileri nasıl
+        kullandığını ve koruduğunu açıklamaktadır.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h2>Topladığımız Veriler</h2>
+      </div>
+      <p>Uygulama yalnızca aşağıdaki bilgileri cihazda yerel olarak saklar:</p>
+      <ul>
+        <li>Kullanıcının girdiği ERP sunucu API adresi</li>
+        <li>Uygulama görünen adı (isteğe bağlı)</li>
+        <li>Muhasebe programı seçimi (Mikro, Netsis, Logo veya Yok)</li>
+        <li>Oturum kimlik doğrulama tokeni (Bearer Token)</li>
+      </ul>
+      <div class="highlight">
+        Bu bilgilerin hiçbiri bizimle veya herhangi bir üçüncü tarafla paylaşılmaz.
+        Tüm veriler yalnızca kullanıcının kendi cihazında (SharedPreferences) saklanır.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2>Toplamadığımız Veriler</h2>
+      </div>
+      <p>Uygulama aşağıdaki bilgileri <strong>kesinlikle toplamaz</strong>:</p>
+      <ul>
+        <li>Ad, soyad, e-posta adresi veya telefon numarası</li>
+        <li>Konum bilgisi (GPS veya ağ tabanlı)</li>
+        <li>Kamera veya mikrofon verisi</li>
+        <li>Kişi rehberi</li>
+        <li>Cihaz kimliği veya reklam kimliği (IDFA / GAID)</li>
+        <li>Kullanım istatistikleri veya analitik veri</li>
+        <li>Çerez (cookie) veya izleme verisi</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h2>Veri İletişimi</h2>
+      </div>
+      <p>
+        Uygulama yalnızca kullanıcının kendi bünyesinde çalışan özel ERP sunucusuyla
+        iletişim kurar. Bu sunucu kamuya açık internet üzerinde değil; müşteri firmanın
+        yerel ağında ya da VPN üzerinden erişilebilen özel bir ortamda çalışmaktadır.
+      </p>
+      <p>
+        Uygulama herhangi bir reklam ağına, analitik servisine veya üçüncü taraf
+        bulut sistemine veri iletmez.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h2>Talep Edilen İzinler</h2>
+      </div>
+      <p>Uygulama yalnızca şu izni talep eder:</p>
+      <ul>
+        <li><strong>İnternet erişimi</strong> — ERP sunucusuna bağlanmak için zorunludur.</li>
+      </ul>
+      <p>Kamera, konum, mikrofon veya kişi rehberi erişimi talep edilmemektedir.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h2>Çocukların Gizliliği</h2>
+      </div>
+      <p>
+        Bu uygulama yalnızca kurumsal kullanıcılara yöneliktir ve 18 yaşın altındaki
+        bireylere hitap etmemektedir. Bilerek hiçbir çocuktan kişisel veri toplamıyoruz.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h2>İletişim</h2>
+      </div>
+      <p>
+        Bu gizlilik politikasıyla ilgili sorularınız için:
+      </p>
+      <ul>
+        <li>E-posta: <a href="mailto:destek@perfecterp.net">destek@perfecterp.net</a></li>
+        <li>Web: <a href="https://perfecterp.net/support" target="_blank">perfecterp.net/support</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h2>Politika Güncellemeleri</h2>
+      </div>
+      <p>
+        Bu gizlilik politikası gerektiğinde güncellenebilir. Önemli değişiklikler
+        olduğunda bu sayfanın üst kısmındaki tarih güncellenecektir. Uygulamayı
+        kullanmaya devam etmeniz güncel politikayı kabul ettiğiniz anlamına gelir.
+      </p>
+    </div>
+
+  </div><!-- /lang-tr -->
+
+  <!-- ═══════════════════════════════════════════════════════ ENGLISH -->
+  <div id="lang-en" class="lang-block">
+
+    <p class="effective-date">Last updated: April 14, 2026</p>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><line x1="12" y1="16" x2="12.01" y2="16"/></svg>
+        </div>
+        <h2>Overview</h2>
+      </div>
+      <p>
+        Perfect ERP Mobile is a corporate mobile reporting application for manufacturing
+        businesses. It is licensed exclusively on a B2B basis to enterprise clients and
+        is not intended for the general public.
+      </p>
+      <p>
+        This Privacy Policy explains what data the application collects, how it is used,
+        and how it is protected.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+        </div>
+        <h2>Data We Store</h2>
+      </div>
+      <p>The application stores only the following information locally on the device:</p>
+      <ul>
+        <li>ERP server API address entered by the user</li>
+        <li>Application display name (optional)</li>
+        <li>Accounting software selection (Mikro, Netsis, Logo, or None)</li>
+        <li>Session authentication token (Bearer Token)</li>
+      </ul>
+      <div class="highlight">
+        None of this information is shared with us or any third party.
+        All data is stored exclusively on the user's own device (SharedPreferences).
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        </div>
+        <h2>Data We Do NOT Collect</h2>
+      </div>
+      <p>The application <strong>does not collect</strong> any of the following:</p>
+      <ul>
+        <li>Name, email address, or phone number</li>
+        <li>Location data (GPS or network-based)</li>
+        <li>Camera or microphone data</li>
+        <li>Contacts or address book</li>
+        <li>Device identifiers or advertising IDs (IDFA / GAID)</li>
+        <li>Usage statistics or analytics data</li>
+        <li>Cookies or tracking data of any kind</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h2>Data Transmission</h2>
+      </div>
+      <p>
+        The application communicates exclusively with the user's own private ERP server.
+        This server is not accessible on the public internet — it operates within the
+        client company's private local network or through a VPN.
+      </p>
+      <p>
+        The application does not transmit any data to advertising networks, analytics
+        services, or any third-party cloud systems.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg>
+        </div>
+        <h2>Permissions Requested</h2>
+      </div>
+      <p>The application requests only the following permission:</p>
+      <ul>
+        <li><strong>Internet access</strong> — required to connect to the ERP server.</li>
+      </ul>
+      <p>No access to camera, location, microphone, or contacts is requested.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        </div>
+        <h2>Children's Privacy</h2>
+      </div>
+      <p>
+        This application is intended exclusively for enterprise users and is not directed
+        at individuals under the age of 18. We do not knowingly collect personal data
+        from children.
+      </p>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+        </div>
+        <h2>Contact</h2>
+      </div>
+      <p>If you have any questions about this Privacy Policy, please contact us:</p>
+      <ul>
+        <li>Email: <a href="mailto:support@perfecterp.net">support@perfecterp.net</a></li>
+        <li>Web: <a href="https://perfecterp.net/support" target="_blank">perfecterp.net/support</a></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-header">
+        <div class="section-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 4H4a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-7"/><path d="M18.5 2.5a2.121 2.121 0 0 1 3 3L12 15l-4 1 1-4 9.5-9.5z"/></svg>
+        </div>
+        <h2>Policy Updates</h2>
+      </div>
+      <p>
+        This Privacy Policy may be updated from time to time. When significant changes
+        are made, the date at the top of this page will be updated. Your continued use
+        of the application constitutes acceptance of the updated policy.
+      </p>
+    </div>
+
+  </div><!-- /lang-en -->
+
+</div><!-- /container -->
+
+<footer>
+  <p>© 2026 Perfect ERP Mobile &nbsp;·&nbsp;
+     <a href="mailto:support@perfecterp.net">support@perfecterp.net</a>
+  </p>
+</footer>
+
+<script>
+  function switchLang(lang, btn) {
+    document.querySelectorAll('.lang-block').forEach(el => el.classList.remove('visible'));
+    document.querySelectorAll('.lang-bar button').forEach(el => el.classList.remove('active'));
+    document.getElementById('lang-' + lang).classList.add('visible');
+    btn.classList.add('active');
+  }
+</script>
+
+</body>
+</html>
